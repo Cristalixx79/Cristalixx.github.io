@@ -1,0 +1,33 @@
+.ibg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    img {
+        display: none;
+    }
+}
+
+.title {
+    color: var(--gray-900, #18181B);
+    font-size: 50.923px;
+    font-weight: 700;
+    line-height: 58.198px;
+    text-transform: capitalize;
+
+    span{
+        color: #6C5FBC;
+    }
+
+    &_left{
+        text-align-last: left;
+        font-size: 35px;
+        font-weight: 600;
+        line-height: 25px;
+        margin-bottom: 75px;
+    }
+
+    &_small{
+        font-size: 35px;
+    }
+}

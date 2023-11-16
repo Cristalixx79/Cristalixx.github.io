@@ -1,0 +1,145 @@
+.footer {
+    margin-top: 153px;
+    background: #EAEAEA;
+
+    @media(max-width: 768px){
+        margin-top: 198px;
+    }
+
+    &__head {
+        padding: 69px 0 20px 0;
+        border-bottom: 1px solid rgba($color: #818181, $alpha: 0.25);
+
+        @media(max-width: 768px){
+            padding: 55px 0 32px 0;
+        }
+    }
+
+    &__bottom {
+        padding: 40px 0 57px 0;
+
+        @media(max-width: 768px){
+            padding: 26px 0 36px 0;
+        }
+    }
+}
+.head-footer {
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media(max-width: 768px){
+            margin-bottom: 53px;
+        }
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+    }
+
+    &__icon{
+        margin-right: 11px;
+    }
+
+    &__title {
+        color: #6C5FBC;
+        font-size: 20.284px;
+        font-weight: 600;
+        line-height: 130%;
+
+        @media(max-width: 425px){
+            font-size: 18px;
+        }
+    }
+
+    &__menu {
+        margin: 0;
+    }
+}
+.menu-footer {
+
+    &__list {
+        display: flex;
+
+        @media(max-width: 768px){
+            flex-direction: column;
+        }
+
+        li{
+            margin-right: 50px;
+
+            @media(max-width: 768px){
+                margin: 0 0 30px 0;
+            }
+            &:last-child{
+                margin: 0px 0px 0px 0px;
+            }
+        }
+    }
+
+    &__link{
+        color: #999;
+        font-family: 'Inter', sans-serif;
+        font-size: 12.678px;
+        font-weight: 500;
+        line-height: 19.017px;
+        text-transform: capitalize;
+
+        @media(max-width: 768px){
+            color: #606060;
+            font-size: 14px;
+            line-height: 18.884px;
+            text-transform: uppercase;
+        }
+
+        @media(min-width: 992px){
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}
+.bottom-footer {
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media(max-width: 768px){
+            justify-content: center;
+        }
+    }
+
+    &__copyright {
+        color: #999;
+        font-family: 'Inter', sans-serif;
+        font-size: 12.089px;
+        font-weight: 500;
+        line-height: 17.778px;
+
+        @media(max-width: 768px){
+            font-size: 13px;
+        }
+    }
+
+    &__social {
+        margin: 0;
+    }
+}
+.social-footer {
+
+    &__icon {
+        display: block;
+
+        img{
+            @media(max-width: 425px){
+                width: 115px;
+                height: 16px;
+            }
+        }
+    }
+}

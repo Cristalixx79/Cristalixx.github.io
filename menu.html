@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/nouislider.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Eatly</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__row">
+                    <div class="header__column">
+                        <a href="" class="header__logo logo-header">
+                            <div class="logo-header__icon">
+                                <img src="images/index/logo.svg" alt="">
+                            </div>
+                            <div class="logo-header__title">eatly</div>
+                        </a>
+                    </div>
+                    <div class="header__column">
+                        <div class="header__icon">
+                            <span></span>
+                        </div>
+                        <nav class="header__menu menu-header">
+                            <ul class="menu-header__list">
+                                <li><a href="" class="menu-header__link choosed">Menu</a></li>
+                                <li><a href="" class="menu-header__link">Blog</a></li>
+                                <li><a href="" class="menu-header__link">Pricing</a></li>
+                                <li><a href="" class="menu-header__link">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="header__column">
+                        <div data-da="menu-header,last,768" class="header__user user-header">
+                            <a href="" class="user-header__login">Login</a>
+                            <a href="" class="user-header__reg">Sign up</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="page">
+            <div class="container">
+                <div class="page__menu menu-page">
+                    <div class="menu-page__body body-menu">
+                        <div class="body-menu__slider-container">
+                            <div class="body-menu__slider slider-body _swiper">
+                                <div class="slider-body__slide">
+                                    <div class="slider-body__title">50% OFF<span>WEEKENDS</span></div>
+                                    <div class="slider-body__image">
+                                        <img src="images/menu-page/block/food.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="slider-body__slide">
+                                    <div class="slider-body__title">50% OFF<span>WEEKENDS</span></div>
+                                    <div class="slider-body__image">
+                                        <img src="images/menu-page/block/food.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="body-menu__bottom bottom-body">
+                            <form action="#" class="bottom-body__form" id="form">
+                                <div class="bottom-body__input-container">
+                                    <input type="text" class="bottom-body__search" placeholder="Search">
+                                </div>
+                            </form>
+                            <div class="bottom-body__options optins-bottom">
+                                <a href="" class="optins-bottom__foor">Food</a>
+                                <a href="" class="optins-bottom__restorant">Restorant</a>
+                            </div>
+                        </div>
+                    </div>
+                    <aside class="menu-page__aside">
+                        <div class="menu-page__filter filter-menu">
+                            <div class="filter-menu__category category-filter">
+                                <div class="category-filter__title filter-title">Category</div>
+                                <div class="category-filter__body">
+                                    <div class="category-filter__item">
+                                        <div class="category-filter__image"><img src="images/menu-page/icons/01.svg" alt=""></div>
+                                        <div class="category-filter__sub-title">Pizza</div>
+                                    </div>
+                                    <div class="category-filter__item category-filter__item_asian">
+                                        <div class="category-filter__image"><img src="images/menu-page/icons/02.svg" alt=""></div>
+                                        <div class="category-filter__sub-title category-filter__sub-title_asian">Asian</div>
+                                    </div>
+                                    <div class="category-filter__item">
+                                        <div class="category-filter__image"><img src="images/menu-page/icons/03.svg" alt=""></div>
+                                        <div class="category-filter__sub-title">Dount</div>
+                                    </div>
+                                    <div class="category-filter__item category-filter__item_ice">
+                                        <div class="category-filter__image"><img src="images/menu-page/icons/04.svg" alt=""></div>
+                                        <div class="category-filter__sub-title category-filter__sub-title_ice">Ice</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter-menu__sort sort-filter">
+                                <div class="sort-filter__title filter-title">Sort By</div>
+                                <div class="sort-filter__body">
+                                    <div class="sort-filter__column">
+                                        <div class="sort-filter__item">Recomended</div>
+                                        <div class="sort-filter__item">Most Popular</div>
+                                    </div>
+                                    <div class="sort-filter__column">
+                                        <div class="sort-filter__item sort-filter__item_type">Fast Delivery</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter-menu__price price-filter">
+                                <div class="price-filter__title filter-title">Price</div>
+                                <div id="slider" class="price-filter__slider"></div>
+                                <div class="price-filter__cost">
+                                    <div class="price-filter__cost-item">$0</div>
+                                    <div class="price-filter__cost-item">$25</div>
+                                    <div class="price-filter__cost-item">$50</div>
+                                    <div class="price-filter__cost-item">$100</div>
+                                    <div class="price-filter__cost-item">$1000</div>
+                                </div>
+                            </div>
+                            <a href="" class="filter-menu__apply">Apply</a>
+                        </div>
+                    </aside>
+                </div>
+                <!-- <div class="page__restourants restourants-page restourants-page restourants-page_menu">
+                    <div class="container restourants-page__container">
+                        <div class="restourants-page__content-body">
+                            <div class="restourants-page__head">
+                                <div class="restourants-page__title title restourants-page__title_small">Our Top <span>Restaurants</span></div>
+                                <div class="restourants-page__more dish-page__more"><a href="">View all</a></div>
+                            </div>
+                            <div class="restourants-page__row">
+                                <div class="restourants-page__column">
+                                    <div class="restourants-page__image ibg">
+                                        <img src="images/index/block/01.png" alt="">
+                                    </div>
+                                    <div class="restourants-page__content">
+                                        <div class="restourants-page__label">Healthy</div>
+                                        <a href="" class="restourants-page__sub-title">The Chicken King</a>
+                                        <div class="restourants-page__body body-restourants">
+                                            <div class="body-restourants__time">24min •</div>
+                                            <div class="body-restourants__rate"><span>4.8</span></div>
+                                        </div>
+                                        <a href="" class="body-restourants__favorites">
+                                            <img src="images/index/icons/favorite.svg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="restourants-page__column">
+                                    <div class="restourants-page__image ibg">
+                                        <img src="images/index/block/01.png" alt="">
+                                    </div>
+                                    <div class="restourants-page__content">
+                                        <div class="restourants-page__label restourants-page__label_red">Healthy</div>
+                                        <a href="" class="restourants-page__sub-title">The Chicken King</a>
+                                        <div class="restourants-page__body body-restourants">
+                                            <div class="body-restourants__time">24min •</div>
+                                            <div class="body-restourants__rate"><span>4.8</span></div>
+                                        </div>
+                                        <a href="" class="body-restourants__favorites">
+                                            <img src="images/index/icons/favorite.svg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="restourants-page__column">
+                                    <div class="restourants-page__image ibg">
+                                        <img src="images/index/block/01.png" alt="">
+                                    </div>
+                                    <div class="restourants-page__content">
+                                        <div class="restourants-page__label">Healthy</div>
+                                        <a href="" class="restourants-page__sub-title">The Chicken King</a>
+                                        <div class="restourants-page__body body-restourants">
+                                            <div class="body-restourants__time">24min •</div>
+                                            <div class="body-restourants__rate"><span>4.8</span></div>
+                                        </div>
+                                        <a href="" class="body-restourants__favorites">
+                                            <img src="images/index/icons/favorite.svg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="page__dish dish-page">
+                    <div class="container dish-page__container">
+                        <div class="dish-page__content-body">
+                            <div class="dish-page__head">
+                                <div class="dish-page__title title dish-page__title_small">Our Top <span>Dishes</span></div>
+                                <div class="restourants-page__more dish-page__more"><a href="">View all</a></div>
+                            </div>
+                            <div class="dish-page__row">
+                                <div class="dish-page__column">
+                                    <div class="dish-page__body">
+                                        <a href="" class="dish-page__heart">
+                                            <img src="images/index/icons/heart.svg" alt="">
+                                        </a>
+                                        <div class="dish-page__image">
+                                            <img src="images/index/block/04.png" alt="">
+                                        </div>
+                                        <div class="dish-page__content">
+                                            <div class="dish-page__label">Healthy</div>
+                                            <a href="" class="dish-page__sub-title">Chicken Hell</a>
+                                            <div class="dish-page__info info-dish">
+                                                <div class="info-dish__time">24min •</div>
+                                                <div class="info-dish__rate"><span>4.8</span></div>
+                                            </div>
+                                            <div class="dish-page__footer footer-dish">
+                                                <div class="footer-dish__cost">$12<span>.99</span></div>
+                                                <a href="" class="footer-dish__add">
+                                                    <img src="images/index/icons/add.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dish-page__column">
+                                    <div class="dish-page__body">
+                                        <a href="" class="dish-page__heart">
+                                            <img src="images/index/icons/heart.svg" alt="">
+                                        </a>
+                                        <div class="dish-page__image">
+                                            <img src="images/index/block/04.png" alt="">
+                                        </div>
+                                        <div class="dish-page__content">
+                                            <div class="dish-page__label dish-page__label_green">Supreme</div>
+                                            <a href="" class="dish-page__sub-title">Chicken Hell</a>
+                                            <div class="dish-page__info info-dish">
+                                                <div class="info-dish__time">24min •</div>
+                                                <div class="info-dish__rate"><span>4.8</span></div>
+                                            </div>
+                                            <div class="dish-page__footer footer-dish">
+                                                <div class="footer-dish__cost">$12<span>.99</span></div>
+                                                <a href="" class="footer-dish__add">
+                                                    <img src="images/index/icons/add.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dish-page__column">
+                                    <div class="dish-page__body">
+                                        <a href="" class="dish-page__heart">
+                                            <img src="images/index/icons/heart.svg" alt="">
+                                        </a>
+                                        <div class="dish-page__image">
+                                            <img src="images/index/block/04.png" alt="">
+                                        </div>
+                                        <div class="dish-page__content">
+                                            <div class="dish-page__label">Healthy</div>
+                                            <a href="" class="dish-page__sub-title">Chicken Hell</a>
+                                            <div class="dish-page__info info-dish">
+                                                <div class="info-dish__time">24min •</div>
+                                                <div class="info-dish__rate"><span>4.8</span></div>
+                                            </div>
+                                            <div class="dish-page__footer footer-dish">
+                                                <div class="footer-dish__cost">$12<span>.99</span></div>
+                                                <a href="" class="footer-dish__add">
+                                                    <img src="images/index/icons/add.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dish-page__column">
+                                    <div class="dish-page__body">
+                                        <a href="" class="dish-page__heart">
+                                            <img src="images/index/icons/heart.svg" alt="">
+                                        </a>
+                                        <div class="dish-page__image">
+                                            <img src="images/index/block/04.png" alt="">
+                                        </div>
+                                        <div class="dish-page__content">
+                                            <div class="dish-page__label dish-page__label_red">Trending</div>
+                                            <a href="" class="dish-page__sub-title">Chicken Hell</a>
+                                            <div class="dish-page__info info-dish">
+                                                <div class="info-dish__time">24min •</div>
+                                                <div class="info-dish__rate"><span>4.8</span></div>
+                                            </div>
+                                            <div class="dish-page__footer footer-dish">
+                                                <div class="footer-dish__cost">$12<span>.99</span></div>
+                                                <a href="" class="footer-dish__add">
+                                                    <img src="images/index/icons/add.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dish-page__column">
+                                    <div class="dish-page__body">
+                                        <a href="" class="dish-page__heart">
+                                            <img src="images/index/icons/heart.svg" alt="">
+                                        </a>
+                                        <div class="dish-page__image">
+                                            <img src="images/index/block/04.png" alt="">
+                                        </div>
+                                        <div class="dish-page__content">
+                                            <div class="dish-page__label">Healthy</div>
+                                            <a href="" class="dish-page__sub-title">Chicken Hell</a>
+                                            <div class="dish-page__info info-dish">
+                                                <div class="info-dish__time">24min •</div>
+                                                <div class="info-dish__rate"><span>4.8</span></div>
+                                            </div>
+                                            <div class="dish-page__footer footer-dish">
+                                                <div class="footer-dish__cost">$12<span>.99</span></div>
+                                                <a href="" class="footer-dish__add">
+                                                    <img src="images/index/icons/add.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="page__questions questions-page">
+                    <div class="questions-page__title title">Frequently Asked <span>Questions</span></div>
+                    <div class="questions-page__body">
+                        <div class="questions-page__item item-questions">
+                            <div class="item-questions__body">
+                                <div class="item-questions__title">How long does delivery take?</div>
+                                <a data-btn="1" href="" class="item-questions__icon"><img src="images/menu-page/icons/plus.svg" alt=""></a>
+                            </div>
+                            <div data-open="1" class="item-questions__content"><span>You Can Get Information By Contacting Our Support Team Have 24/7 Service. What’s The Difference Between Free And Paid Plan ?</span></div>
+                        </div>
+                        <div class="questions-page__item item-questions">
+                            <div class="item-questions__body">
+                                <div class="item-questions__title">How long does delivery take?</div>
+                                <a data-btn="2" href="" class="item-questions__icon"><img src="images/menu-page/icons/plus.svg" alt=""></a>
+                            </div>
+                            <div data-open="2" class="item-questions__content"><span>You Can Get Information By Contacting Our Support Team Have 24/7 Service. What’s The Difference Between Free And Paid Plan ?</span></div>
+                        </div>
+                        <div class="questions-page__item item-questions">
+                            <div class="item-questions__body">
+                                <div class="item-questions__title">How long does delivery take?</div>
+                                <a data-btn="3" href="" class="item-questions__icon"><img src="images/menu-page/icons/plus.svg" alt=""></a>
+                            </div>
+                            <div data-open="3" class="item-questions__content"><span>You Can Get Information By Contacting Our Support Team Have 24/7 Service. What’s The Difference Between Free And Paid Plan ?</span></div>
+                        </div>
+                        <div class="questions-page__item item-questions">
+                            <div class="item-questions__body">
+                                <div class="item-questions__title">How long does delivery take?</div>
+                                <a data-btn="4" href="" class="item-questions__icon"><img src="images/menu-page/icons/plus.svg" alt=""></a>
+                            </div>
+                            <div data-open="4" class="item-questions__content"><span>You Can Get Information By Contacting Our Support Team Have 24/7 Service. What’s The Difference Between Free And Paid Plan ?</span></div>
+                        </div>
+                        <div class="questions-page__item item-questions">
+                            <div class="item-questions__body">
+                                <div class="item-questions__title">How long does delivery take?</div>
+                                <a data-btn="5" href="" class="item-questions__icon"><img src="images/menu-page/icons/plus.svg" alt=""></a>
+                            </div>
+                            <div data-open="5" class="item-questions__content"><span>You Can Get Information By Contacting Our Support Team Have 24/7 Service. What’s The Difference Between Free And Paid Plan ?</span></div>
+                        </div>
+                        <div class="questions-page__item item-questions">
+                            <div class="item-questions__body">
+                                <div class="item-questions__title">How long does delivery take?</div>
+                                <a data-btn="6" href="" class="item-questions__icon"><img src="images/menu-page/icons/plus.svg" alt=""></a>
+                            </div>
+                            <div data-open="6" class="item-questions__content"><span>You Can Get Information By Contacting Our Support Team Have 24/7 Service. What’s The Difference Between Free And Paid Plan ?</span></div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__head head-footer">
+                    <div class="head-footer__row">
+                        <div class="head-footer__logo">
+                            <a class="head-footer__icon" href=""><img src="images/index/logo.svg"></a>
+                            <div class="head-footer__title">eatly</div>
+                        </div>
+                        <nav data-da="head-footer,last,768" class="head-footer__menu menu-footer">
+                            <ul class="menu-footer__list">
+                                <li><a href="" class="menu-footer__link">Blog</a></li>
+                                <li><a href="" class="menu-footer__link">Pricing</a></li>
+                                <li><a href="" class="menu-footer__link">About Us</a></li>
+                                <li><a href="" class="menu-footer__link">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="footer__bottom bottom-footer">
+                    <div class="bottom-footer__row">
+                        <div class="bottom-footer__copyright">© 2023 EATLY All Rights Reserved.</div>
+                        <div data-da="head-footer__row,last,768" class="bottom-footer__social social-footer">
+                            <a href="" class="social-footer__icon">
+                                <img src="images/index/icons/social-media.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/libs/Swiper.js"></script>
+    <script src="js/libs/nouislider.min.js"></script>
+    <script src="js/libs/wNumb.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
